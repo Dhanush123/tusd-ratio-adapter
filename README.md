@@ -53,7 +53,7 @@ zip -r external-adapter.zip .
 - In Lambda Functions, create function
 - On the Create function page:
   - Give the function a name
-  - Use Node.js 12.x for the runtime
+  - Use Node.js 14.x for the runtime
   - Choose an existing role or create a new one
   - Click Create Function
 - Under Function code, select "Upload a .zip file" from the Code entry type drop-down
