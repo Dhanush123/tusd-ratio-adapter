@@ -2,6 +2,7 @@ const { Requester, Validator } = require('@chainlink/external-adapter')
 
 const createRequest = (input, callback) => {
   // The Validator helps you validate the Chainlink request data
+  console.log("ADAPTER input!!!",input);
   const validator = new Validator(callback, input, {})
   const jobRunID = validator.validated.id
   const url = `https://core-api.real-time-attest.trustexplorer.io/trusttoken/TrueUSD`
